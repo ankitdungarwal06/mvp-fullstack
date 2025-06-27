@@ -1,6 +1,10 @@
 # mvp-headerbackendapplication
 head application handling backend tasks to connect to different applications and also feed UI
 
+calendar - show full calendar and show tasks for a particular day
+add hindi calendar like auspicious dates and avoider days
+task creator, notes creator and then link task with notes, trips, events and goals
+
 
 I have a long term vision for developing my application which would also be linked with my own AI assistant (to be build later)
 so this application I'll start small and keep adding features over time.
