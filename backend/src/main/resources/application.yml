@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: header backend application
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/homedatabase
+    username: root
+    password: Ankit@1992
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  redis:
+    host: localhost
+    port: 6379
+
+server:
+  port: 8080
+
+
+
+
+gmail:
+  username: "ankitdungarwal92@gmail.com"
+  password: "bqzx utpx doyr gvns"
