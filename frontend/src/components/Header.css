@@ -1,0 +1,40 @@
+/* src/components/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  height: 80px; /* Fixed height for compact header */
+  box-sizing: border-box;
+}
+
+.header-brand h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.header-nav a:hover {
+  color: #007bff;
+}
+
+.header-dates {
+  max-width: 220px; /* Adjusted to fit compact UpcomingDates */
+  display: flex;
+  align-items: center;
+}

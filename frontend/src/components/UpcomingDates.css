@@ -1,0 +1,62 @@
+/* src/components/UpcomingDates.css */
+.upcoming-dates {
+  font-size: 0.9rem;
+  max-width: 200px; /* Limit width for compact header */
+}
+
+.upcoming-dates h3 {
+  font-size: 1rem;
+  margin: 0 0 5px;
+}
+
+.dates-container {
+  max-height: 60px; /* Height for ~3 rows (adjust as needed) */
+  overflow: hidden; /* Hide overflow for scrolling */
+  position: relative;
+}
+
+.dates-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.date-item {
+  display: flex;
+  gap: 5px;
+  padding: 5px 0;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Truncate long text */
+}
+
+.restricted {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.dates-loading,
+.dates-error {
+  font-size: 0.9rem;
+  color: #666;
+  padding: 5px;
+}
+
+/* Scrolling animation for >3 rows */
+.scrolling .dates-list {
+  animation: scrollUp 10s linear infinite; /* Adjust duration for speed */
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%); /* Move up by half the list height */
+  }
+}
+
+/* Pause animation on hover (optional) */
+.scrolling .dates-list:hover {
+  animation-play-state: paused;
+}
