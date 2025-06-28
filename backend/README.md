@@ -4,6 +4,9 @@ head application handling backend tasks to connect to different applications and
 calendar - show full calendar and show tasks for a particular day
 add hindi calendar like auspicious dates and avoider days
 task creator, notes creator and then link task with notes, trips, events and goals
+recurring costs and on it's days with restriction
+expense tracker and later analyse and also so graphical
+show details based on roles in every aspect off every thing
 
 
 I have a long term vision for developing my application which would also be linked with my own AI assistant (to be build later)
