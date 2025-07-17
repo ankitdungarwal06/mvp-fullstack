@@ -72,3 +72,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## 27/06/2025
+
+npm install @fullcalendar/react @fullcalendar/daygrid @f
+ullcalendar/timegrid @fullcalendar/list @fullcalendar/interaction
+
+npm install react-toastify

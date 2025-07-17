@@ -8,7 +8,7 @@ const Header = ({ userId }) => {
   return (
     <header className="header">
       <div className="header-brand">
-        <h1>My Application</h1>
+        <h1>Complete Application</h1>
       </div>
       <nav className="header-nav">
         <ul>
@@ -17,6 +17,9 @@ const Header = ({ userId }) => {
           </li>
           <li>
             <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/calendar">Calendar</a>
           </li>
         </ul>
       </nav>
