@@ -46,6 +46,7 @@ function CalendarView({ userId }) {
               notes: event.notes,
               category: event.category,
               userId: event.userId,
+              username: event.username,
             },
           }))
         );
@@ -75,6 +76,7 @@ function CalendarView({ userId }) {
       notes: arg.event.extendedProps.notes || "",
       category: arg.event.extendedProps.category || "Work",
       userId: arg.event.extendedProps.userId,
+      username: arg.event.extendedProps.username,
     };
     setSelectedEvent(event);
     setModalOpen(true);
@@ -95,6 +97,7 @@ function CalendarView({ userId }) {
           notes: event.notes,
           category: event.category,
           userId: event.userId,
+          username: event.username,
         },
       },
     ]);
@@ -117,6 +120,7 @@ function CalendarView({ userId }) {
                 notes: event.notes,
                 category: event.category,
                 userId: event.userId,
+                username: event.username,
               },
             }
           : e
@@ -131,6 +135,18 @@ function CalendarView({ userId }) {
     setModalOpen(false);
   };
 
+  //Customize event display
+  const renderEventContent = (eventInfo) => {
+    return (
+      <div style={{ padding: "2px 5px", fontSize: "14px" }}>
+        <b>{eventInfo.timeText}</b> {eventInfo.event.title} -{" "}
+        {eventInfo.event.extendedProps.location || "No location"} (
+        {eventInfo.event.extendedProps.category},{" "}
+        {eventInfo.event.extendedProps.username || "No user"})
+      </div>
+    );
+  };
+
   return (
     <div style={{ maxWidth: "900px", margin: "20px auto", padding: "0 20px" }}>
       <FullCalendar
@@ -139,6 +155,7 @@ function CalendarView({ userId }) {
         events={events}
         dateClick={handleDateClick}
         eventClick={handleEventClick}
+        eventContent={renderEventContent}
         eventDisplay="block"
         eventTimeFormat={{
           hour: "2-digit",

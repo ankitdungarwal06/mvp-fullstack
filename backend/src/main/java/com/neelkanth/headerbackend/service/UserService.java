@@ -5,6 +5,7 @@ import com.neelkanth.headerbackend.repository.UserRepository;
 import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -23,6 +24,7 @@ public class UserService {
         return userRepository.findAll();
     }
 
+    @Transactional
     public User fetchUserById(Long id){
         User response = userRepository.findById(id).orElse(new User());
         if(response != null){

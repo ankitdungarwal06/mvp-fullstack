@@ -20,7 +20,8 @@ public class EventService {
 
 
     public List<Event> getEventsByUserId(Long userId) {
-        return eventRepository.findByUser_Id(userId);
+        List<Event> response = eventRepository.findByUser_Id(userId);
+        return response;
     }
 
     public Event createEvent(Event event, Long userId) {

@@ -1,0 +1,19 @@
+.modal {
+  padding: 20px;
+  background-color: white;
+  margin: auto;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 350px;
+  max-height: 70vh;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttonContainer {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}

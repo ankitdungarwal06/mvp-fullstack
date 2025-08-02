@@ -21,6 +21,15 @@ const Header = ({ userId }) => {
           <li>
             <a href="/calendar">Calendar</a>
           </li>
+          <li>
+            <a href="/tasks">Tasks</a>
+          </li>
+          <li>
+            <a href="/discussions">Discussions</a>
+          </li>
+          <li>
+            <a href="/DailyNotes">DailyNotes</a>
+          </li>
         </ul>
       </nav>
       <div className="header-dates">

@@ -25,4 +25,8 @@ public class Event {
     public Long getUserId() {
         return user != null ? user.getId() : null;
     }
+
+    public String getUsername() {
+        return user != null ? user.getUsername() : null;
+    }
 }

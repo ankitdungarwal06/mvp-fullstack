@@ -1,0 +1,13 @@
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.createButton {
+  margin-bottom: 20px;
+}
+
+.tableContainer {
+  padding: 20px;
+}
